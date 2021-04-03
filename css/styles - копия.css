@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #26272d;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* Header */
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+
+    height: 120px;
+
+    padding: 0 10px;
+    position: relative;
+    /* background-color: beige; */
+}
+
+.header__link {
+    margin: 0;
+    margin-right: 30px;
+
+    outline: none;
+    text-decoration: none;
+    color: #26272d;
+
+    transition: color .1s linear;
+}
+
+.header__link:last-child {
+    margin-right: 0;
+}
+
+.header__link:not(.logo):hover {
+    color: #267df4;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.header__link img {
+    width: 8px;
+    height: 8px;
+    transform: rotate(90deg);
+}
+
+.containing_icon {
+    position: relative;
+    padding-right: 0.75em;
+}
+
+.icon {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    z-index: 2;
+
+    opacity: 1;
+
+    transition: opacity, .1s linear;
+}
+
+.containing_icon:hover .icon {
+    opacity: 0;
+}
+
+.activated_icon {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    z-index: 1;
+}
+
+
+/* Header Entrance */
+.header__entrance {
+    display: inline-block;
+
+    position: relative;
+}
+
+.header__entrance__item {
+    display: block;
+
+    position: absolute;
+    left: 0;
+
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+
+    transition: opacity .25s linear;
+}
+
+.header__entrance:hover .header__entrance__item {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+
+/* Intro */
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: url(../images/intro.jpg), center, no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Colors */
+/* 
+black: #26272d;
+focused: #267df4;
+*/
+
+/* Fonts */
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Varela Round', sans-serif;
+ */

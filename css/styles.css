@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #26272d;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+/* Main navbar */
+.main-navbar {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #26272d;
+
+    transition: color .1s linear;
+}
+
+.main-logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+
+    padding: 0;
+}
+
+.nav-links__item {
+    display: inline-block;
+
+    margin: 0;
+    margin-right: 30px;
+}
+
+.nav-links__item:last-child {
+    margin-right: 0;
+}
+
+.nav-links__item a:hover {
+    color: #267df4;
+}
+
+/* Drop down */
+.drop-down {
+    position: relative;
+}
+
+.drop-down__item {
+    position: absolute;
+
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+
+    transition: opacity .25s linear;
+}
+
+.drop-down:hover .drop-down__item {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+/* Icons */
+.nav-links__item .icon {
+    width: 8px;
+    height: 8px;
+    transform: rotate(90deg);
+}
+
+.containing_icon {
+    position: relative;
+    padding-right: 0.75em;
+}
+
+.icon {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    z-index: 2;
+
+    opacity: 1;
+
+    transition: opacity, .1s linear;
+}
+
+.containing_icon:hover .icon {
+    opacity: 0;
+}
+
+.activated_icon {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* Header */
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header__inner {
+    height: 120px;
+}
+
+
+
+/* Intro */
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: url(../images/intro/intro.jpg), center, no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Colors */
+/* 
+black: #26272d;
+focused: #267df4;
+*/
+
+/* Fonts */
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Varela Round', sans-serif;
+ */
