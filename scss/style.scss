@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import 'variables';
+@import 'main-mixins';
+
+
+* {
+    &,
+    &:after,
+    &:before {
+        @include box-sizing(border-box);
+    }
+}
+
+
+
+body {
+    margin: 0;
+
+    @include primary-font;
+    line-height: $line-height-primary;
+    color: $color-primary;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 120px;
+
+    background-color: $bg-color-primary;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+
+    font-family: $ff-titles;
+    font-size: $f-size-titles;
+
+    text-align: center;
+}
+
+h2 {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Main navbar */
+.main-navbar {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        @include link-style-reset;
+
+        transition: color .1s linear;
+    }
+}
+
+.main-logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    @include list-style-reset;
+
+    &__item {
+        display: inline-block;
+
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a:hover {
+            color: $color-hovered-link;
+        }
+    }
+}
+
+
+
+// Drop down
+.drop-down {
+    position: relative;
+    // text-align: left;
+
+    & > a:after {
+        content: "";
+        @include drop-down-triangle(0.5em);
+        margin-left: 0.1em;
+        transition: transform .1s linear;
+    }
+
+    &:hover {
+        a:after {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__item {
+        position: absolute;
+        width: max-content;
+
+        padding-top: 0.5em;
+
+        @include hidden;
+        transition: opacity .25s linear;
+
+        .nav-links__item {
+            display: block;
+            margin: 0;
+        }
+    }
+
+    &:hover &__item {
+        @include visible;
+    }
+}
+
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    // text-align: center;
+}
+
+
+
+/* Header */
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    &__inner {
+        height: 120px;
+    }
+}
+
+
+
+/* Intro */
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: url(../images/intro/intro.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+/* Flex Group */
+.flex-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Input Line */
+.input-line {
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 5px 10px;
+    
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+
+    outline: none;
+
+    @include primary-font;
+}
+
+.dash {
+    width: 3em;
+    height: 1px;
+    background-color: $color-primary;
+}
+
+
+/* Button */
+.btn {
+    padding: 5px 10px;
+
+    background-color: $button-color-primary;
+
+    border: 1px solid $border-color-primary;
+    border-radius: 20px;
+
+    outline: none;
+
+    @include primary-font;
+
+    transition: background-color .1s linear;
+
+    &:hover {
+        background-color: $button-hovered-color;
+    }
+
+    &:active {
+        background-color: $button-pressed-color;
+    }
+}
+
+
+/* Cross Area */
+.cross {
+    &-area {
+        width: 1.5em;
+        height: 1.5em;
+
+        position: relative;
+
+        padding: 0;
+        
+        display: inline-block;
+        white-space: nowrap;
+
+        // background-color: red;
+        border-radius: 1.5em;
+
+        @include visible;
+
+        transition: background-color .2s ease-out;
+
+        &:active {
+            background-color: $border-color-primary;
+        }
+
+
+
+        $diagonal: 0.75em;
+        $side: $diagonal / 1.414;
+        $shift: ($diagonal - $side) * 0.5;
+
+        &:before {
+            content: "";
+
+            @include stroke-triangle($diagonal, $color-primary);
+            vertical-align: text-top;
+    
+            position: absolute;
+            top: calc(50% - #{$side} * 0.5);
+            left: calc(50% - #{$side} - #{$shift} + 0.5px);
+
+            // left: -($diagonal - $side) * 0.5;
+
+            // top: calc(50% - 0.75em / 1.414 * 0.5);
+            // left: -(0.75em - 0.75em / 1.414) * 0.5;
+        }
+    
+        &:after {
+            content: "";
+            @include stroke-triangle($diagonal, $color-primary);
+            transform: rotate(-135deg);
+            vertical-align: text-top;
+
+            position: absolute;
+            top: calc(50% - #{$side} * 0.5);
+            right: calc(50% - #{$side} - #{$shift} + 0.5px);
+
+            // right: -($diagonal - $side) * 0.5;
+
+            // top: calc(50% - 0.75em / 1.414 * 0.5);
+            // right: -(0.75em - 0.75em / 1.414) * 0.5;
+        }
+    }
+}
+
+
+/* Search Line */
+.search-line {
+    grid-area: search;
+
+    width: 100%;
+
+    padding: 0.5em 30px;
+    
+    border: 1px solid $border-color-primary;
+    border-radius: 20px;
+
+    outline: none;
+
+    @include primary-font;
+}
+
+
+
+/* Courses */
+.courses {
+    display: grid;
+    grid-template:
+                    [search-row-start] "search search" auto [search-row-end]
+                    [main-row-start] "filter content" auto [main-row-end]
+                    / 400px auto;
+    gap: 20px;
+}
+
+
+/* Filter */
+.filter {
+    grid-area: filter;
+
+    // padding: 0 30px;
+
+    background-color: #fff;
+    border: 1px solid $border-color-primary;
+    border-radius: 20px;
+
+    ul {
+        @include list-style-reset;
+    }
+
+    &-tabs {
+        &__item {
+            padding: 0 30px 1em;
+
+            border-top: 1px solid $border-color-secondary;
+        }
+    }
+
+    &-options {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 10px 12px;
+    
+        // padding-top: 30px;
+    
+        align-items: baseline;
+    }
+
+
+    &-authors {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        &__item {
+            width: max-content;
+            height: calc(1.5em + 10px);
+
+            flex: 0 0 1;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 0 10px;
+        
+            border: 1px solid $border-color-primary;
+            border-radius: 20px;
+
+            font-size: 15px;
+        }
+    }
+}
+
+.accordion {
+    &-title {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        margin-bottom: 0.5em;
+    }
+}
+
+.stroke-triangle {
+    font-size: 1.5em;
+    @include stroke-triangle(0.75em);
+    transform: rotate(135deg);
+
+    position: relative;
+    top: -0.75em * 0.25;
+}
+
+
+.main-content {
+    grid-area: content;
+
+    background-color: #fff;
+    border: 1px solid $border-color-primary;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

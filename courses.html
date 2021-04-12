@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title>Главная</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="main-navbar">
+                    <a href="index.html" class="main-logo"><b>English</b>Study</a>
+        
+                    <ul class="nav-links">
+                        <li class="nav-links__item"><a href="index.html">Главная</a></li>
+                        <li class="nav-links__item"><a href="courses.html">Курсы</a></li>
+                        <li class="nav-links__item drop-down">
+                            <a href="#">Теория</a>
+                            <ul class="nav-links drop-down__item">
+                                <li class="nav-links__item"><a href="#">Некоторый текст лол</a></li>
+                                <li class="nav-links__item"><a href="#">Некоторый текст лол</a></li>
+                                <li class="nav-links__item"><a href="#">Некоторый текст лол</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-links__item"><a href="#">Лекции</a></li>
+                        <li class="nav-links__item"><a href="#">Мои курсы</a></li>
+                    </ul>
+        
+                    <ul class="nav-links">
+                        <li class="nav-links__item"><a href="#">Уведомления</a></li>
+                        <li class="nav-links__item drop-down">
+                            <a href="#">Войти</a>
+                            <ul class="nav-links drop-down__item">
+                                <li class="nav-links__item"><a href="#">Регистрация</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg">
+        <div class="container">
+            <div class="courses">
+                <input type="text" class="search-line" placeholder="Поиск">
+
+                <aside class="filter">
+                    <h1>Фильтр</h1>
+
+                    <ul class="filter-tabs">
+                        <li class="filter-tabs__item accordion">
+                            <div class="accordion-title">
+                                <h2>Цена</h2>
+                                <div class="stroke-triangle"></div>
+                            </div>
+
+                            <div class="filter-options accordion__item">
+                                <input type="checkbox" name="price" id="priceChoice1">
+                                <label for="priceChoice1">Бесплатно</label>
+                                <input type="text" class="input-line">
+
+                                <input type="checkbox" name="price" id="priceChoice2">
+                                <label for="priceChoice2">Больше чем</label>
+                                <input type="text" class="input-line">
+
+                                <input type="checkbox" name="price" id="priceChoice3">
+                                <label for="priceChoice3">Меньше чем</label>
+                                <input type="text" class="input-line">
+
+                                <input type="checkbox" name="price" id="priceChoice4">
+                                <label for="priceChoice4">Между</label>
+                                <div class="flex-group">
+                                    <input type="text" class="input-line">
+                                    <div class="dash"></div>
+                                    <input type="text" class="input-line">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="filter-tabs__item accordion">
+                            <div class="accordion-title">
+                                <h2>Авторы</h2>
+                                <div class="stroke-triangle"></div>
+                            </div>
+
+                            <div class="filter-options accordion__item">
+                                <label class="filter-options__item">Имя</label>
+                                <input type="text" class="input-line">
+                                <button class="btn">Добавить</button>
+
+                                <div class="filter-authors">
+                                    <div class="filter-authors__item">
+                                        <label>Бабенко</label>
+                                        <div class="cross-area"></div>
+                                    </div>
+                                    <div class="filter-authors__item">
+                                        <label>Юрченко Даниил</label>
+                                        <div class="cross-area"></div>
+                                    </div>
+                                    <div class="filter-authors__item">
+                                        <label>Комаров Сергей</label>
+                                        <div class="cross-area"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="filter-tabs__item accordion">
+                            <div class="accordion-title">
+                                <h2>График</h2>
+                                <div class="stroke-triangle"></div>
+                            </div>
+
+                            <div class="filter-options accordion__item">
+                                <label class="filter-options__item">Продолжительность</label>
+                                <label class="filter-options__item">Интенсивность</label>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+
+                <section class="main-content"></section>
+            </div><!-- /courses -->
+        </div><!-- /container -->
+
+    </div><!-- /bg -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
