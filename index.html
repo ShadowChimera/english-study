@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto&family=Varela+Round&display=swap"
-        rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <title>Главная</title>
 </head>
@@ -20,12 +17,19 @@
         <div class="container">
             <div class="header__inner">
                 <nav class="main-navbar">
-                    <a href="#" class="main-logo"><b>English</b>Study</a>
+                    <a href="index.html" class="main-logo"><b>English</b>Study</a>
         
                     <ul class="nav-links">
-                        <li class="nav-links__item"><a href="#">Главная</a></li>
-                        <li class="nav-links__item"><a href="#">Курсы</a></li>
-                        <li class="nav-links__item"><a href="#">Теория</a></li>
+                        <li class="nav-links__item"><a href="index.html">Главная</a></li>
+                        <li class="nav-links__item"><a href="courses.html">Курсы</a></li>
+                        <li class="nav-links__item drop-down">
+                            <a href="#">Теория</a>
+                            <ul class="nav-links drop-down__item">
+                                <li class="nav-links__item"><a href="#">Некоторый текст лол</a></li>
+                                <li class="nav-links__item"><a href="#">Некоторый текст лол</a></li>
+                                <li class="nav-links__item"><a href="#">Некоторый текст лол</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-links__item"><a href="#">Лекции</a></li>
                         <li class="nav-links__item"><a href="#">Мои курсы</a></li>
                     </ul>
@@ -35,7 +39,7 @@
                         <li class="nav-links__item drop-down">
                             <a href="#">Войти</a>
                             <ul class="nav-links drop-down__item">
-                                <li class="nav-links__item"><a href="#" class="">Регистрация</a></li>
+                                <li class="nav-links__item"><a href="#">Регистрация</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -48,7 +52,7 @@
 
     </div>
 
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

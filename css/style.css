@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #26272d;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  padding-top: 120px;
+  background-color: #f4f5f6;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "El Messiri", sans-serif;
+  font-size: 42px;
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* Main navbar */
+.main-navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-navbar a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  transition: color 0.1s linear;
+}
+
+.main-logo {
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+.nav-links__item:last-child {
+  margin-right: 0;
+}
+.nav-links__item a:hover {
+  color: #267df4;
+}
+
+.drop-down {
+  position: relative;
+}
+.drop-down > a:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.25em 0 0.25em 0.433em;
+  border-left-color: inherit;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  margin-left: 0.1em;
+  transition: transform 0.1s linear;
+}
+.drop-down:hover a:after {
+  transform: rotate(90deg);
+}
+.drop-down__item {
+  position: absolute;
+  width: max-content;
+  padding-top: 0.5em;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+.drop-down__item .nav-links__item {
+  display: block;
+  margin: 0;
+}
+.drop-down:hover .drop-down__item {
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.header__inner {
+  height: 120px;
+}
+
+/* Intro */
+.intro {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/intro/intro.jpg) center no-repeat;
+  background-size: cover;
+}
+
+/* Flex Group */
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input Line */
+.input-line {
+  display: inline-block;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #26272d;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dash {
+  width: 3em;
+  height: 1px;
+  background-color: #26272d;
+}
+
+/* Button */
+.btn {
+  padding: 5px 10px;
+  background-color: #efefef;
+  border: 1px solid #dae2e4;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.1s linear;
+}
+.btn:hover {
+  background-color: #dae2e4;
+}
+.btn:active {
+  background-color: #c8dde3;
+}
+
+/* Cross Area */
+.cross-area {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  padding: 0;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 1.5em;
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+.cross-area:active {
+  background-color: #dae2e4;
+}
+.cross-area:before {
+  content: "";
+  display: inline-block;
+  width: 0.5304101839em;
+  height: 0.5304101839em;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-left-color: transparent;
+  border-top-color: #26272d;
+  border-right-color: #26272d;
+  border-bottom-color: transparent;
+  transform: rotate(45deg);
+  vertical-align: text-top;
+  position: absolute;
+  top: calc(50% - 0.5304101839em * 0.5);
+  left: calc(50% - 0.5304101839em - 0.1097949081em + 0.5px);
+}
+.cross-area:after {
+  content: "";
+  display: inline-block;
+  width: 0.5304101839em;
+  height: 0.5304101839em;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-left-color: transparent;
+  border-top-color: #26272d;
+  border-right-color: #26272d;
+  border-bottom-color: transparent;
+  transform: rotate(45deg);
+  transform: rotate(-135deg);
+  vertical-align: text-top;
+  position: absolute;
+  top: calc(50% - 0.5304101839em * 0.5);
+  right: calc(50% - 0.5304101839em - 0.1097949081em + 0.5px);
+}
+
+/* Search Line */
+.search-line {
+  grid-area: search;
+  width: 100%;
+  padding: 0.5em 30px;
+  border: 1px solid #dae2e4;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Courses */
+.courses {
+  display: grid;
+  grid-template: [search-row-start] "search search" auto [search-row-end] [main-row-start] "filter content" auto [main-row-end]/400px auto;
+  gap: 20px;
+}
+
+/* Filter */
+.filter {
+  grid-area: filter;
+  background-color: #fff;
+  border: 1px solid #dae2e4;
+  border-radius: 20px;
+}
+.filter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.filter-tabs__item {
+  padding: 0 30px 1em;
+  border-top: 1px solid #e9e9ea;
+}
+.filter-options {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 10px 12px;
+  align-items: baseline;
+}
+.filter-authors {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filter-authors__item {
+  width: max-content;
+  height: calc(1.5em + 10px);
+  flex: 0 0 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  border: 1px solid #dae2e4;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.accordion-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.stroke-triangle {
+  font-size: 1.5em;
+  display: inline-block;
+  width: 0.5304101839em;
+  height: 0.5304101839em;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-left-color: transparent;
+  border-top-color: inherit;
+  border-right-color: inherit;
+  border-bottom-color: transparent;
+  transform: rotate(45deg);
+  transform: rotate(135deg);
+  position: relative;
+  top: -0.1875em;
+}
+
+.main-content {
+  grid-area: content;
+  background-color: #fff;
+  border: 1px solid #dae2e4;
+  border-radius: 20px;
+}
