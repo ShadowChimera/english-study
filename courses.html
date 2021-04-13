@@ -65,8 +65,8 @@
 
                             <div class="filter-options accordion__item">
                                 <input type="checkbox" name="price" id="priceChoice1">
-                                <label for="priceChoice1">Бесплатно</label>
-                                <input type="text" class="input-line">
+                                <label for="priceChoice1" class="cell__span2">Бесплатно</label>
+                                <!-- <input type="text" class="input-line"> -->
 
                                 <input type="checkbox" name="price" id="priceChoice2">
                                 <label for="priceChoice2">Больше чем</label>
@@ -84,7 +84,8 @@
                                     <input type="text" class="input-line">
                                 </div>
                             </div>
-                        </li>
+                        </li><!-- /filter-tabs__item -->
+
                         <li class="filter-tabs__item accordion">
                             <div class="accordion-title">
                                 <h2>Авторы</h2>
@@ -92,7 +93,7 @@
                             </div>
 
                             <div class="filter-options accordion__item">
-                                <label class="filter-options__item">Имя</label>
+                                <label>Имя</label>
                                 <input type="text" class="input-line">
                                 <button class="btn">Добавить</button>
 
@@ -111,7 +112,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li><!-- /filter-tabs__item -->
+
                         <li class="filter-tabs__item accordion">
                             <div class="accordion-title">
                                 <h2>График</h2>
@@ -119,14 +121,192 @@
                             </div>
 
                             <div class="filter-options accordion__item">
-                                <label class="filter-options__item">Продолжительность</label>
-                                <label class="filter-options__item">Интенсивность</label>
-                            </div>
-                        </li>
-                    </ul>
-                </aside>
+                                <h6 class="cell__span3">Продолжительность</h6>
 
-                <section class="main-content"></section>
+                                <input type="checkbox" name="price" id="priceChoice2">
+                                <label for="priceChoice2">Больше чем</label>
+                                <input type="text" class="input-line">
+
+                                <input type="checkbox" name="price" id="priceChoice3">
+                                <label for="priceChoice3">Меньше чем</label>
+                                <input type="text" class="input-line">
+
+                                <input type="checkbox" name="price" id="priceChoice4">
+                                <label for="priceChoice4">Между</label>
+                                <div class="flex-group">
+                                    <input type="text" class="input-line">
+                                    <div class="dash"></div>
+                                    <input type="text" class="input-line">
+                                </div>
+
+
+                                <h6 class="cell__span3">Интенсивность</h6>
+
+                                <input type="checkbox" name="price" id="priceChoice2">
+                                <label for="priceChoice2">Больше чем</label>
+                                <input type="text" class="input-line">
+
+                                <input type="checkbox" name="price" id="priceChoice3">
+                                <label for="priceChoice3">Меньше чем</label>
+                                <input type="text" class="input-line">
+
+                                <input type="checkbox" name="price" id="priceChoice4">
+                                <label for="priceChoice4">Между</label>
+                                <div class="flex-group">
+                                    <input type="text" class="input-line">
+                                    <div class="dash"></div>
+                                    <input type="text" class="input-line">
+                                </div>
+                            </div><!-- /filter-options -->
+                        </li><!-- /filter-tabs__item -->
+                    </ul><!-- /filter-tabs -->
+                </aside><!-- /filter -->
+
+                <section class="main-content">
+                    <h1>Курсы</h1>
+
+                    <!-- <div class="main-content__item">
+                        <h2 class="main-content__item-title">Имя курса</h2>
+                        <div class="main-content__item-price">
+                            Цена: 
+                            <span class="value">бесплатно</span>
+                        </div>
+                        <p class="main-content__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue erat id dui lacinia ultricies. Aenean sem nulla, egestas eu...
+                        </p>
+                        <div class="main-content__item-duration">
+                            Продолжительность: 
+                            <span class="value">не задано</span>
+                        </div>
+                        <div class="main-content__item-intensivity">
+                            Интенсивность: 
+                            <span class="value">не задано</span>
+                        </div>
+                        <div class="main-content__item-authors">
+                            Авторы: 
+                            <span class="value">Алексей Бабенко</span>
+                        </div>
+                    </div> -->
+
+                    <div class="main-content__item">
+                        <header class="main-content__item-header">
+                            <h2 class="main-content__item-header__title">Имя курса</h2>
+                            <div class="main-content__item-header__price">
+                                <label>Цена:</label>
+                                <span class="value">бесплатно</span>
+                            </div>
+                        </header>
+
+                        <div class="main-content__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue erat id dui lacinia ultricies. Aenean sem nulla, egestas eu...
+                        </div>
+
+                        <footer class="main-content__item-footer">
+                            <div class="footer__schedule">
+                                <label>Продолжительность:</label>
+                                <span class="value">не задано</span>
+                                <label>Интенсивность:</label>
+                                <span class="value">не задано</span>
+                            </div>
+                            <div class="footer__authors">
+                                <label>Авторы:</label>
+                                <span class="value">Алексей Бабенко</span>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="main-content__item">
+                        <header class="main-content__item-header">
+                            <h2 class="main-content__item-header__title">Имя курса</h2>
+                            <div class="main-content__item-header__price">
+                                <label>Цена:</label>
+                                <span class="value">12345 грн</span>
+                            </div>
+                        </header>
+
+                        <div class="main-content__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue erat id dui lacinia ultricies. Aenean sem nulla, egestas eu...
+                        </div>
+
+                        <footer class="main-content__item-footer">
+                            <div class="footer__schedule">
+                                <label>Продолжительность:</label>
+                                <span class="value">6 месяцев</span>
+                                <label>Интенсивность:</label>
+                                <span class="value">3 д/н</span>
+                            </div>
+                            <div class="footer__authors">
+                                <label>Авторы:</label>
+                                <span class="value">Сергей Комаров</span>
+                                <span class="value">Даниил Юрченко</span>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="main-content__item">
+                        <header class="main-content__item-header">
+                            <h2 class="main-content__item-header__title">Имя курса</h2>
+                            <div class="main-content__item-header__price">
+                                <label>Цена:</label>
+                                <span class="value">12345 грн</span>
+                            </div>
+                        </header>
+
+                        <div class="main-content__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue erat id dui lacinia ultricies. Aenean sem nulla, egestas eu...
+                        </div>
+
+                        <footer class="main-content__item-footer">
+                            <div class="footer__schedule">
+                                <label>Продолжительность:</label>
+                                <span class="value">6 месяцев</span>
+                                <label>Интенсивность:</label>
+                                <span class="value">3 д/н</span>
+                            </div>
+                            <div class="footer__authors">
+                                <label>Авторы:</label>
+                                <span class="value enumerable">Сергей Комаров</span>
+                                <span class="value enumerable">Даниил Юрченко</span>
+                                <span class="value enumerable">Бабенко Алексей</span>
+                                <span class="value enumerable">Зубенко Михаил Петрович</span>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="main-content__item">
+                        <header class="main-content__item-header">
+                            <h2 class="main-content__item-header__title">Имя курса</h2>
+                            <div class="main-content__item-header__price">
+                                <label>Цена:</label>
+                                <span class="value">12345 грн</span>
+                            </div>
+                        </header>
+
+                        <div class="main-content__item-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue erat id dui lacinia ultricies. Aenean sem nulla, egestas eu...
+                        </div>
+
+                        <footer class="main-content__item-footer">
+                            <div class="footer__schedule">
+                                <label>Продолжительность:</label>
+                                <span class="value">6 месяцев</span>
+                                <label>Интенсивность:</label>
+                                <span class="value">3 д/н</span>
+                            </div>
+                            <div class="footer__authors test">
+                                <label>Авторы:</label>
+                                <div class="vertical-alignment">
+                                    <span class="value">Сергей Комаров</span>
+                                    <span class="value">Даниил Юрченко</span>
+                                    <span class="value">Бабенко Алексей</span>
+                                    <span class="value">Зубенко Михаил Петрович</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+
+                </section>
+
             </div><!-- /courses -->
         </div><!-- /container -->
 

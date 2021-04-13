@@ -4,6 +4,13 @@
     -webkit-box-sizing: $param;
 }
 
+@mixin box-shadow($param...) {
+    -webkit-box-shadow: $param;
+    -moz-box-shadow: $param;
+    box-shadow: $param;
+}
+
+
 @mixin list-style-reset {
     list-style: none;
     margin: 0;
@@ -28,7 +35,7 @@
     cursor: pointer;
 }
 
-@mixin drop-down-triangle($height) {
+@mixin drop-down-triangle($height, $border-color: inherit) {
     display: inline-block;
     width: 0;
     height: 0;
@@ -36,7 +43,7 @@
     border-style: solid;
     border-width: $height/2 0 $height/2 $height*0.866;
     //border-width: 0.25em 0 0.25em 0.433em;
-    border-left-color: inherit;
+    border-left-color: $border-color;
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
