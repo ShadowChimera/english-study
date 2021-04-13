@@ -118,21 +118,55 @@ h6 {
         transition: transform .1s linear;
     }
 
-    & > a:before {
+    &:after {
         content: "";
-        @include drop-down-triangle(0.75em, #223c5010);
-
-        $newColor: opacify(#223c5033, 0.23);
+        // @include drop-down-triangle(0.75em, #223c5010);
+        @include drop-down-triangle(0.75em, $bg-color-primary);
 
         position: absolute;
         bottom: -0.75em;
         left: calc(50% - 0.75em*0.433);
+        z-index: 3;
 
         transform: rotate(-90deg);
 
         @include hidden;
         transition: opacity .25s linear
     }
+
+    &:before {
+        content: "";
+        // @include drop-down-triangle(0.75em, #223c5010);
+        @include drop-down-triangle('0.75em + 2px', $border-color-primary);
+
+        position: absolute;
+        bottom: -0.75em;
+        left: calc(50% - 0.75em*0.433 - 1px);
+        z-index: 2;
+
+        transform: rotate(-90deg);
+
+        @include hidden;
+        transition: opacity .125s linear
+    }
+
+    // & > a:before {
+    //     content: "";
+    //     // @include drop-down-triangle(0.75em, #223c5010);
+    //     @include drop-down-triangle(0.75em, $bg-color-primary);
+
+    //     $newColor: opacify(#223c5033, 0.23);
+
+    //     position: absolute;
+    //     bottom: -0.75em;
+    //     left: calc(50% - 0.75em*0.433);
+    //     z-index: 3;
+
+    //     transform: rotate(-90deg);
+
+    //     @include hidden;
+    //     transition: opacity .25s linear
+    // }
 
     &__item {
         position: absolute;
@@ -173,7 +207,8 @@ h6 {
             transform: rotate(90deg);
         }
 
-        a:before {
+        &:before,
+        &:after {
             @include visible;
         }
 

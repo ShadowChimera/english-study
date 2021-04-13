@@ -41,7 +41,7 @@
     height: 0;
 
     border-style: solid;
-    border-width: $height/2 0 $height/2 $height*0.866;
+    border-width: calc((#{$height}) / 2) 0 calc((#{$height}) / 2) calc((#{$height})*0.866);
     //border-width: 0.25em 0 0.25em 0.433em;
     border-left-color: $border-color;
     border-top-color: transparent;
@@ -79,3 +79,23 @@
         weight: 500;
     }
 }
+
+
+
+
+
+/*
+@mixin drop-down-triangle($height, $border-color: inherit) {
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: $height/2 0 $height/2 $height*0.866;
+    //border-width: 0.25em 0 0.25em 0.433em;
+    border-left-color: $border-color;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+*/
