@@ -1,0 +1,78 @@
+.size42 {
+    font-size: 42px;
+}
+.size36 {
+    font-size: 36px;
+}
+.size27 {
+    font-size: 27px;
+}
+.size24 {
+    font-size: 24px;
+}
+.size18 {
+    font-size: 18px;
+}
+.size16 {
+    font-size: 16px;
+}
+.size14 {
+    font-size: 14px;
+}
+
+
+.color1 {
+    color: $darkestlightblack;
+}
+.color2 {
+    color: $darkerlightblack;
+}
+.color3 {
+    color: $darklightblack;
+}
+.color4 {
+    color: $lightblack;
+}
+.color5 {
+    color: $lighterblack;
+}
+.color6 {
+    color: $lightestblack;
+}
+
+
+.suptitle {
+    font-size: $f-size-title-secondary;
+    color: $f-color-suptitle;
+
+    margin: 0;
+    padding: 0;
+}
+.title {
+    font-size: $f-size-title-primary;
+    color: $f-color-title-primary;
+
+    margin: 0;
+    padding: 0;
+}
+.subtitle {
+    font-size: $f-size-emphasis;
+    color: $f-color-subtitle;
+
+    margin: 0;
+    padding: 0;
+}
+.main-text {
+    font-size: $f-size-primary;
+    color: $f-color-primary;
+
+    margin: 0;
+    padding: 0;
+}
+.placeholder {
+    font-size: $f-size-primary;
+    color: $f-color-placeholder;
+
+    margin: 0;
+    padding: 0;
+}
