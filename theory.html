@@ -8,11 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <title>Профиль</title>
+    <title>Курсы</title>
 </head>
 
 <body>
-
     <header class="header">
         <div class="container">
 
@@ -28,7 +27,7 @@
                         <line x1="211.5" y1="21.5" x2="298.5" y2="21.5" stroke="#7ACBCD" stroke-width="3" stroke-linecap="round"/>
                     </svg>
                 </a>
-
+    
                 <nav class="main-navbar">
                     <ul class="navbar__inner">
                         <li class="navbar__item">
@@ -37,8 +36,8 @@
                         <li class="navbar__item">
                             <a href="courses.html" class="navbar-link">Курсы</a>
                         </li>
-                        <li class="navbar__item">
-                            <a href="theory.html" class="navbar-link">Теория</a>
+                        <li class="navbar__item active-link">
+                            <a href="#" class="navbar-link">Теория</a>
                         </li>
                         <li class="navbar__item">
                             <a href="lectures.html" class="navbar-link">Лекции</a>
@@ -58,8 +57,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="navbar__item active-link">
-                            <a href="#" class="navbar-link"><!-- icon-profile.svg -->
+                        <li class="navbar__item">
+                            <a href="profile.html" class="navbar-link"><!-- icon-profile.svg -->
                                 <svg class="icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.9998 2.99999C9.71976 2.99999 2.99976 9.71999 2.99976 18C2.99976 26.28 9.71976 33 17.9998 33C26.2798 33 32.9998 26.28 32.9998 18C32.9998 9.71999 26.2798 2.99999 17.9998 2.99999ZM17.9998 7.49999C20.4898 7.49999 22.4998 9.50999 22.4998 12C22.4998 14.49 20.4898 16.5 17.9998 16.5C15.5098 16.5 13.4998 14.49 13.4998 12C13.4998 9.50999 15.5098 7.49999 17.9998 7.49999ZM17.9998 28.8C14.2498 28.8 10.9348 26.88 8.99976 23.97C9.04476 20.985 14.9998 19.35 17.9998 19.35C20.9848 19.35 26.9548 20.985 26.9998 23.97C25.0648 26.88 21.7498 28.8 17.9998 28.8Z" fill="white"/>
                                 </svg>
@@ -73,129 +72,149 @@
         </div><!-- /container -->
     </header><!-- /header -->
 
-    <div class="profile">
-        <div class="container flex-wrapper">
+    <div class="theory">
 
-            <div class="profile__inner">
-                <div class="title-container">
-                    <h1>Настройка профиля</h1>
+        <div class="container">
+            <div class="search-line">
+                <input type="text" placeholder="Поиск">
+                <div class="icon-container"><!-- icon-search.svg -->
+                    <svg class="icon" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.2096 40.6484H42.9054L42.0887 39.8645C44.9471 36.5545 46.6679 32.2574 46.6679 27.5828C46.6679 17.1594 38.1804 8.71035 27.7096 8.71035C17.2387 8.71035 8.75122 17.1594 8.75122 27.5828C8.75122 38.0063 17.2387 46.4553 27.7096 46.4553C32.4054 46.4553 36.7221 44.7423 40.0471 41.8969L40.8346 42.7099V45.0036L55.4179 59.4919L59.7637 55.1657L45.2096 40.6484ZM27.7096 40.6484C20.4471 40.6484 14.5846 34.8124 14.5846 27.5828C14.5846 20.3532 20.4471 14.5173 27.7096 14.5173C34.9721 14.5173 40.8346 20.3532 40.8346 27.5828C40.8346 34.8124 34.9721 40.6484 27.7096 40.6484Z" fill="#404040"/>
+                    </svg>
                 </div>
-
-                <div class="flex-wrapper">
-                    <div class="image-container"><!-- icon-image.svg -->
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 19V5C21 3.9 20.1 3 19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19ZM8.5 13.5L11 16.51L14.5 12L19 18H5L8.5 13.5Z" fill="#989898"/>
-                        </svg>
-                        <div class="subtitle">Нажмите, чтобы поменять</div>
-                    </div>
+            </div>
     
-                    <div class="options">
-                        <section class="options-section">
-                            <h1 class="colored-border-1">Персональная информация</h1>
+                <section class="main-content">
+                    <div class="title-container">
+                        <h1>Теоретические материалы</h1>
+                    </div>
 
-                            <div class="options-item">
-                                <div class="suptitle">Имя пользователя</div>
-                                <input type="text" value="ShadowChimera" name="username" placeholder="Никнейм">
-                            </div>
-                            <div class="options-item">
-                                <div class="suptitle">Отображаемые имя и фамилия</div>
-                                <div class="input-container">
-                                    <input type="text" value="Алексей" name="firstname" placeholder="Имя">
-                                    <input type="text" value="Бабенко" name="surname" placeholder="Фамилия">
+                    <div class="search-results">
+                        <div class="search-results__item colored-border-1">
+                            <header class="item-header">
+                                <div class="item-header__item">
+                                    <span>Курс:</span>
+                                    <span class="value" name="course">название курса</span>
                                 </div>
-                            </div>
-                            <div class="options-item">
-                                <div class="suptitle">Почта</div>
-                                <input type="text" value="Alexey22042001@gmail.com" name="email" placeholder="E-mail">
-                            </div>
-                        </section>
-
-                        <section class="options-section">
-                            <h1 class="colored-border-5">Безопасность</h1>
-
-                            <div class="options-item grid-wrapper">
-                                <div class="flex-wrapper">
-                                    <div class="suptitle">Пароль</div>
-                                    <div class="subtitle">введите текущий</div>
+                                <div class="item-header__item">
+                                    <span>Авторы:</span>
+                                    <span name="authors">
+                                        Бабенко Алексей и еще
+                                        [<span class="value" name="count">2</span>]
+                                        <span class="unit" name="authors">человека</span>
+                                    </span>
                                 </div>
-                                <input type="password" value="" name="old-password" placeholder="Текущий пароль">
-                                <div class="btn">
-                                    <!-- icon-renew.svg -->
-                                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 6V9L16 5L12 1V4C7.58 4 4 7.58 4 12C4 13.57 4.46 15.03 5.24 16.26L6.7 14.8C6.25 13.97 6 13.01 6 12C6 8.69 8.69 6 12 6ZM18.76 7.74L17.3 9.2C17.74 10.04 18 10.99 18 12C18 15.31 15.31 18 12 18V15L8 19L12 23V20C16.42 20 20 16.42 20 12C20 10.43 19.54 8.97 18.76 7.74V7.74Z" fill="black"/>
-                                    </svg>
-                                        
-                                    Поменять
-                                </div>
-                            </div>
-                            <div class="options-item">
-                                <div class="suptitle disabled">Новый пароль</div>
-                                <input type="text" value="" name="new-password" placeholder="Новый пароль" disabled>
-                            </div>
-                            <div class="options-item">
-                                <div class="suptitle disabled">Подтверждение пароля</div>
-                                <input type="text" value="" name="repeat-password" placeholder="Повтор пароля" disabled>
-                            </div>
-                        </section>
+                            </header>
 
-                        <section class="options-section">
-                            <h1 class="colored-border-3">Приватность</h1>
-                            
-                            <div class="options-item">
-                                <input type="checkbox" name="private" id="privateChoice1">
-                                <label for="privateChoice1">Отображать мое имя в профиле</label>
+                            <div class="title">
+                                Название статьи
                             </div>
-                            <div class="options-item">
-                                <input type="checkbox" name="private" id="privateChoice2">
-                                <label for="privateChoice2">Отображать мою почту в профиле</label>
-                            </div>
-                        </section>
-                        <section class="options-section">
-                            <h1 class="colored-border-2">Уведомления</h1>
-                            
-                            <div class="suptitle">Получать уведомления</div>
-                            <div class="options-item">
-                                <input type="checkbox" name="notice" id="noticeChoice1">
-                                <label for="noticeChoice1">о новых заданиях</label>
-                            </div>
-                            <div class="options-item">
-                                <input type="checkbox" name="notice" id="noticeChoice2">
-                                <label for="noticeChoice2">о возврате сданной работы</label>
-                            </div>
-                            <div class="options-item">
-                                <input type="checkbox" name="notice" id="noticeChoice3">
-                                <label for="noticeChoice3">об оценке сданной работы</label>
-                            </div>
-                            <div class="options-item">
-                                <input type="checkbox" name="notice" id="noticeChoice4">
-                                <label for="noticeChoice4">о новых личных сообщениях</label>
-                            </div>
-                        </section>
-
-                        <div class="flex-wrapper">
-                            <div class="btn">
-                                <!-- icon-cancel.svg -->
-                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM17 15.59L15.59 17L12 13.41L8.41 17L7 15.59L10.59 12L7 8.41L8.41 7L12 10.59L15.59 7L17 8.41L13.41 12L17 15.59Z" fill="black"/>
-                                </svg>
-                                    
-                                Сбросить
-                            </div>
-                            <div class="btn">
-                                <!-- icon-save.svg -->
-                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V7L17 3ZM12 19C10.34 19 9 17.66 9 16C9 14.34 10.34 13 12 13C13.66 13 15 14.34 15 16C15 17.66 13.66 19 12 19ZM15 9H5V5H15V9Z" fill="black"/>
-                                </svg> 
-                                    
-                                Сохранить
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem erat, vestibulum id accumsan ac, ultrices a erat. Morbi quis risus imperdiet, porttitor enim vitae, vehicula tortor. Phasellus pretium at sapien sed efficitur. Vestibulum id suscipit lacus, et luctus enim. Donec a efficitur est...
                             </div>
                         </div>
-                    </div><!-- /options -->
-                </div><!-- /flex-wrapper -->
-            </div><!-- /profile__inner -->
 
+                        <div class="search-results__item colored-border-2">
+                            <header class="item-header">
+                                <div class="item-header__item">
+                                    <span>Курс:</span>
+                                    <span class="value" name="course">название курса</span>
+                                </div>
+                                <div class="item-header__item">
+                                    <span>Авторы:</span>
+                                    <span name="authors">
+                                        Бабенко Алексей и еще
+                                        [<span class="value" name="count">2</span>]
+                                        <span class="unit" name="authors">человека</span>
+                                    </span>
+                                </div>
+                            </header>
+
+                            <div class="title">
+                                Название статьи
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem erat, vestibulum id accumsan ac, ultrices a erat. Morbi quis risus imperdiet, porttitor enim vitae, vehicula tortor. Phasellus pretium at sapien sed efficitur. Vestibulum id suscipit lacus, et luctus enim. Donec a efficitur est...
+                            </div>
+                        </div>
+
+                        <div class="search-results__item colored-border-3">
+                            <header class="item-header">
+                                <div class="item-header__item">
+                                    <span>Курс:</span>
+                                    <span class="value" name="course">название курса</span>
+                                </div>
+                                <div class="item-header__item">
+                                    <span>Авторы:</span>
+                                    <span name="authors">
+                                        Бабенко Алексей и еще
+                                        [<span class="value" name="count">2</span>]
+                                        <span class="unit" name="authors">человека</span>
+                                    </span>
+                                </div>
+                            </header>
+
+                            <div class="title">
+                                Название статьи
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem erat, vestibulum id accumsan ac, ultrices a erat. Morbi quis risus imperdiet, porttitor enim vitae, vehicula tortor. Phasellus pretium at sapien sed efficitur. Vestibulum id suscipit lacus, et luctus enim. Donec a efficitur est...
+                            </div>
+                        </div>
+
+                        <div class="search-results__item colored-border-4">
+                            <header class="item-header">
+                                <div class="item-header__item">
+                                    <span>Курс:</span>
+                                    <span class="value" name="course">название курса</span>
+                                </div>
+                                <div class="item-header__item">
+                                    <span>Авторы:</span>
+                                    <span name="authors">
+                                        Бабенко Алексей и еще
+                                        [<span class="value" name="count">2</span>]
+                                        <span class="unit" name="authors">человека</span>
+                                    </span>
+                                </div>
+                            </header>
+
+                            <div class="title">
+                                Название статьи
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem erat, vestibulum id accumsan ac, ultrices a erat. Morbi quis risus imperdiet, porttitor enim vitae, vehicula tortor. Phasellus pretium at sapien sed efficitur. Vestibulum id suscipit lacus, et luctus enim. Donec a efficitur est...
+                            </div>
+                        </div>
+
+                        <div class="search-results__item colored-border-5">
+                            <header class="item-header">
+                                <div class="item-header__item">
+                                    <span>Курс:</span>
+                                    <span class="value" name="course">название курса</span>
+                                </div>
+                                <div class="item-header__item">
+                                    <span>Авторы:</span>
+                                    <span name="authors">
+                                        Бабенко Алексей и еще
+                                        [<span class="value" name="count">2</span>]
+                                        <span class="unit" name="authors">человека</span>
+                                    </span>
+                                </div>
+                            </header>
+
+                            <div class="title">
+                                Название статьи
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lorem erat, vestibulum id accumsan ac, ultrices a erat. Morbi quis risus imperdiet, porttitor enim vitae, vehicula tortor. Phasellus pretium at sapien sed efficitur. Vestibulum id suscipit lacus, et luctus enim. Donec a efficitur est...
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- /main-content -->
         </div><!-- /container -->
-    </div><!-- /profile -->
+
+    </div><!-- /theory -->
+
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
