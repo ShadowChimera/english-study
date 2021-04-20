@@ -57,16 +57,22 @@
     margin: 0;
 }
 
-@mixin hidden{
+@mixin hidden {
     pointer-events: none;
     cursor: default;
     opacity: 0;
 }
 
-@mixin active{
+@mixin active {
     opacity: 1;
     pointer-events: all;
     cursor: pointer;
+}
+
+@mixin disabled {
+    opacity: 1;
+    pointer-events: none;
+    cursor: default;
 }
 
 

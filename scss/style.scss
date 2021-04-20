@@ -41,21 +41,41 @@ h1 {
 
 
 
-.colored-border {
+.colored {
     &-1 {
-        border-color: $border-color-colored-1;
+        background-color: $color-alt-1;
     }
     &-2 {
-        border-color: $border-color-colored-2;
+        background-color: $color-alt-2;
     }
     &-3 {
-        border-color: $border-color-colored-3;
+        background-color: $color-alt-3;
     }
     &-4 {
-        border-color: $border-color-colored-4;
+        background-color: $color-alt-4;
     }
-    &-5 {
-        border-color: $border-color-colored-5;
+
+    &-border {
+        &-1,
+        &-1:after {
+            border-color: $border-color-colored-1;
+        }
+        &-2,
+        &-2:after {
+            border-color: $border-color-colored-2;
+        }
+        &-3,
+        &-3:after {
+            border-color: $border-color-colored-3;
+        }
+        &-4,
+        &-4:after {
+            border-color: $border-color-colored-4;
+        }
+        &-5,
+        &-5:after {
+            border-color: $border-color-colored-5;
+        }
     }
 }
 
@@ -481,12 +501,19 @@ input[type=password] {
     @include box-shadow($shadow-primary);
 
 
+    .title-container {
+        font-size: $f-size-emphasis;
+    }
+
     .search-results {
         display: flex;
         flex-direction: column;
         row-gap: 1em;
 
         &__item {
+            display: block;
+            @include link-style-reset;
+
             padding: 0.5em;
             padding-top: 0;
 
@@ -535,6 +562,341 @@ input[type=password] {
 
             &:hover {
                 @include box-shadow($shadow-secondary);
+            }
+        }
+    }
+}
+
+
+
+/* Courses */ 
+.course {
+    .tab-container {
+        width: fit-content;
+
+        margin: 1.5em auto;
+
+        .tab {
+            @include link-style-reset;
+
+            margin-right: 1em;
+
+            position: relative;
+
+            &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                
+                position: absolute;
+                top: 0.5em;
+                left: 0;
+
+                border-bottom: 3px solid transparent;
+            }
+            &:hover {
+                &:after {
+                    border-bottom-color: $border-color-colored-3;
+                }
+            }
+
+            &.active {
+                &:after {
+                    border-bottom-color: $border-color-colored-3
+                }
+            }
+
+            &.disabled {
+                color: $f-color-placeholder;
+
+                @include disabled;
+
+                &:after {
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+    }
+
+    &__inner {
+        display: flex;
+        column-gap: 1em;
+
+
+        > .flex-wrapper {
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: start;
+            row-gap: 1em; 
+
+            .btn {
+                // align-self: center;
+                justify-content: center;
+
+                padding: 1em;
+            }
+        }
+
+        .author {
+            @include link-style-reset;
+
+            display: flex;
+            align-items: center;
+            column-gap: 0.5em;
+
+            padding: 0.5em;
+
+            border: 1px solid transparent;
+            border-radius: $border-radius-circle;
+           
+            @include transition(background-color .1s linear);
+
+            .icon {
+                width: 1.5em;
+                height: 1.5em;
+            }
+            
+            &:hover {
+                background-color: $bg-color-input-primary;
+                border-color: $border-color-primary;
+            }
+            &:active {
+                background-color: $bg-color-input-secondary;
+            }
+        }
+
+        .suptitle {
+            color: $f-color-suptitle;
+        }
+
+        .author {
+            @include link-style-reset;
+
+            display: flex;
+            align-items: center;
+            column-gap: 0.5em;
+
+            padding: 0.5em;
+
+            border: 1px solid transparent;
+            border-radius: $border-radius-circle;
+           
+            @include transition(background-color .1s linear);
+
+            .icon {
+                width: 1.5em;
+                height: 1.5em;
+            }
+            
+            &:hover {
+                background-color: $bg-color-input-primary;
+                border-color: $border-color-primary;
+            }
+            &:active {
+                background-color: $bg-color-input-secondary;
+            }
+        }
+
+        .task {
+            display: block;
+
+
+            .subtitle {
+                font-size: $f-size-additional;
+                color: $f-color-subtitle;
+            }
+
+            &:hover {
+                text-decoration: none;
+                .task-title {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .sidebar {
+            padding: 1em;
+
+            background-color: $bg-color-panel;
+            border-radius: $border-radius-semi-circle;
+        
+            @include box-shadow($shadow-primary);
+
+
+            .suptitle {
+                color: $f-color-suptitle;
+            }
+
+            .author {
+                @include link-style-reset;
+
+                display: flex;
+                align-items: center;
+                column-gap: 0.5em;
+
+                padding: 0.5em;
+
+                border: 1px solid transparent;
+                border-radius: $border-radius-circle;
+               
+                @include transition(background-color .1s linear);
+
+                .icon {
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+                
+                &:hover {
+                    background-color: $bg-color-input-primary;
+                    border-color: $border-color-primary;
+                }
+                &:active {
+                    background-color: $bg-color-input-secondary;
+                }
+            }
+
+            .task {
+                display: block;
+
+
+                .subtitle {
+                    font-size: $f-size-additional;
+                    color: $f-color-subtitle;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    .task-title {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .item {
+                line-height: 2;
+            }
+        }
+
+
+        .main-content {
+            padding: 1em 2em;
+        }
+
+        .description {
+            font-family: $ff-secondary;
+            font-size: $f-size-secondary;
+            text-align: justify;
+        }
+
+        .comments {
+            &__item {
+                margin-top: 1em;
+
+                padding: 0.5em 1em;
+
+                border: 1px solid $border-color-primary;
+                border-radius: $border-radius-semi-circle;
+
+                .user {
+                    @include link-style-reset;
+
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    column-gap: 1em;
+
+                    .avatar {
+                        grid-row: 1 / span 2;
+
+                        align-self: center;
+
+                        width: 2em;
+                        height: 2em;
+                    }
+
+                    .value[name=username] {
+                        font-weight: 500;
+                    }
+
+                    .value[name=date] {
+                        font-size: $f-size-additional;
+                        color: $f-color-subtitle;
+                    }
+
+
+                    &:hover {
+                        .value[name=username] {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .comment {
+                    margin: 0;
+                    margin-top: 1em;
+
+                    font-family: $ff-secondary;
+                    font-size: $f-size-secondary;
+                }
+            }
+        }
+
+
+        .lectures {
+            margin: 0 auto;
+
+            .title-container {
+                font-size: $f-size-emphasis;
+            }
+
+            .item-header {
+                height: 100%;
+
+                align-items: flex-start;
+
+                .title-container {
+                    font-size: $f-size-primary;
+
+                    padding-top: 1em;
+                }
+
+                .title {
+                    font-size: $f-size-title-secondary;
+                    font-weight: 400;
+                    color: $f-color-primary;
+                    // line-height: 2;
+                }
+    
+                .subtitle {
+                    font-size: $f-size-additional;
+                    font-weight: 500;
+                    text-align: right;
+                }
+            }
+        }
+
+        .tasks {
+            max-width: 500px;
+
+            margin: 0 auto;
+
+            &__inner {
+                .title-container {
+                    font-size: $f-size-primary;
+                    padding: 0 $f-size-secondary*0.5;
+                }
+                .suptitle {
+                    color: $f-color-suptitle;
+                }
+            }
+
+            .task {
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                .suptitle {
+                    font-size: $f-size-secondary;
+                }
             }
         }
     }
@@ -787,6 +1149,12 @@ input[type=password] {
     }
 
     &__item {
+        @include link-style-reset;
+
+        display: block;
+
+        border-top-width: 6px;
+        border-top-style: solid;
         border-radius: $border-radius-secondary;
 
         @include box-shadow($shadow-primary);
@@ -797,17 +1165,18 @@ input[type=password] {
         &-header {
             padding: 0.5em;
 
-            background-color: $bg-color-button-pressed;
+            // background-color: $bg-color-button-pressed;
+            border-bottom: 1px solid $border-color-primary;
             border-radius: $border-radius-secondary $border-radius-secondary 0 0;
 
-            color: $f-color-secondary;
+            // color: $f-color-secondary;
             
 
             .title {
                 margin-bottom: 0.5em;
 
                 font-size: $f-size-title-secondary;
-                font-weight: 700; 
+                font-weight: 500; 
             }
 
             .subtitle {

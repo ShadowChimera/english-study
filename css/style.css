@@ -5,6 +5,7 @@
 /* Border */
 /* Shadow */
 /* Padding */
+/* Alt Colors */
 *,
 *:after,
 *:before {
@@ -36,19 +37,31 @@ h1 {
   margin: 0 auto;
 }
 
-.colored-border-1 {
+.colored-1 {
+  background-color: #5B76E0;
+}
+.colored-2 {
+  background-color: #F5993D;
+}
+.colored-3 {
+  background-color: #328449;
+}
+.colored-4 {
+  background-color: #a01d26;
+}
+.colored-border-1, .colored-border-1:after {
   border-color: #DCDEF0;
 }
-.colored-border-2 {
+.colored-border-2, .colored-border-2:after {
   border-color: #F4C959;
 }
-.colored-border-3 {
+.colored-border-3, .colored-border-3:after {
   border-color: #5B76E0;
 }
-.colored-border-4 {
+.colored-border-4, .colored-border-4:after {
   border-color: #60EB87;
 }
-.colored-border-5 {
+.colored-border-5, .colored-border-5:after {
   border-color: #F93232;
 }
 
@@ -344,12 +357,19 @@ input[type=password]::placeholder {
   -moz-box-shadow: 0px 1px 3px 0px #00000040;
   box-shadow: 0px 1px 3px 0px #00000040;
 }
+.main-content .title-container {
+  font-size: 24px;
+}
 .main-content .search-results {
   display: flex;
   flex-direction: column;
   row-gap: 1em;
 }
 .main-content .search-results__item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
   padding: 0.5em;
   padding-top: 0;
   -webkit-box-shadow: 0px 1px 3px 0px #00000040;
@@ -395,6 +415,264 @@ input[type=password]::placeholder {
   -webkit-box-shadow: 0px 2.4px 7.21px 0px #00000040;
   -moz-box-shadow: 0px 2.4px 7.21px 0px #00000040;
   box-shadow: 0px 2.4px 7.21px 0px #00000040;
+}
+
+/* Courses */
+.course .tab-container {
+  width: fit-content;
+  margin: 1.5em auto;
+}
+.course .tab-container .tab {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  margin-right: 1em;
+  position: relative;
+}
+.course .tab-container .tab:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  border-bottom: 3px solid transparent;
+}
+.course .tab-container .tab:hover:after {
+  border-bottom-color: #5B76E0;
+}
+.course .tab-container .tab.active:after {
+  border-bottom-color: #5B76E0;
+}
+.course .tab-container .tab.disabled {
+  color: #D2D2D2;
+  opacity: 1;
+  pointer-events: none;
+  cursor: default;
+}
+.course .tab-container .tab.disabled:after {
+  border-bottom-color: transparent;
+}
+.course__inner {
+  display: flex;
+  column-gap: 1em;
+}
+.course__inner > .flex-wrapper {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  row-gap: 1em;
+}
+.course__inner > .flex-wrapper .btn {
+  justify-content: center;
+  padding: 1em;
+}
+.course__inner .author {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+  padding: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  -o-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.course__inner .author .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+.course__inner .author:hover {
+  background-color: #FAFCFD;
+  border-color: #D5D6D2;
+}
+.course__inner .author:active {
+  background-color: #E4E6F4;
+}
+.course__inner .suptitle {
+  color: #636262;
+}
+.course__inner .author {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+  padding: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  -o-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.course__inner .author .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+.course__inner .author:hover {
+  background-color: #FAFCFD;
+  border-color: #D5D6D2;
+}
+.course__inner .author:active {
+  background-color: #E4E6F4;
+}
+.course__inner .task {
+  display: block;
+}
+.course__inner .task .subtitle {
+  font-size: 14px;
+  color: #838282;
+}
+.course__inner .task:hover {
+  text-decoration: none;
+}
+.course__inner .task:hover .task-title {
+  text-decoration: underline;
+}
+.course__inner .sidebar {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px 0px #00000040;
+  -moz-box-shadow: 0px 1px 3px 0px #00000040;
+  box-shadow: 0px 1px 3px 0px #00000040;
+}
+.course__inner .sidebar .suptitle {
+  color: #636262;
+}
+.course__inner .sidebar .author {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+  padding: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  -o-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.course__inner .sidebar .author .icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+.course__inner .sidebar .author:hover {
+  background-color: #FAFCFD;
+  border-color: #D5D6D2;
+}
+.course__inner .sidebar .author:active {
+  background-color: #E4E6F4;
+}
+.course__inner .sidebar .task {
+  display: block;
+}
+.course__inner .sidebar .task .subtitle {
+  font-size: 14px;
+  color: #838282;
+}
+.course__inner .sidebar .task:hover {
+  text-decoration: none;
+}
+.course__inner .sidebar .task:hover .task-title {
+  text-decoration: underline;
+}
+.course__inner .sidebar .item {
+  line-height: 2;
+}
+.course__inner .main-content {
+  padding: 1em 2em;
+}
+.course__inner .description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+}
+.course__inner .comments__item {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid #D5D6D2;
+  border-radius: 10px;
+}
+.course__inner .comments__item .user {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1em;
+}
+.course__inner .comments__item .user .avatar {
+  grid-row: 1/span 2;
+  align-self: center;
+  width: 2em;
+  height: 2em;
+}
+.course__inner .comments__item .user .value[name=username] {
+  font-weight: 500;
+}
+.course__inner .comments__item .user .value[name=date] {
+  font-size: 14px;
+  color: #838282;
+}
+.course__inner .comments__item .user:hover .value[name=username] {
+  text-decoration: underline;
+}
+.course__inner .comments__item .comment {
+  margin: 0;
+  margin-top: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.course__inner .lectures {
+  margin: 0 auto;
+}
+.course__inner .lectures .title-container {
+  font-size: 24px;
+}
+.course__inner .lectures .item-header {
+  height: 100%;
+  align-items: flex-start;
+}
+.course__inner .lectures .item-header .title-container {
+  font-size: 18px;
+  padding-top: 1em;
+}
+.course__inner .lectures .item-header .title {
+  font-size: 27px;
+  font-weight: 400;
+  color: #404040;
+}
+.course__inner .lectures .item-header .subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+}
+.course__inner .tasks {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.course__inner .tasks__inner .title-container {
+  font-size: 18px;
+  padding: 0 8px;
+}
+.course__inner .tasks__inner .suptitle {
+  color: #636262;
+}
+.course__inner .tasks .task {
+  display: flex;
+  justify-content: space-between;
+}
+.course__inner .tasks .task .suptitle {
+  font-size: 16px;
 }
 
 /* Unit */
@@ -587,6 +865,12 @@ input[type=password]::placeholder {
   box-shadow: 0px 1px 3px 0px #00000040;
 }
 .my-courses__item {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  display: block;
+  border-top-width: 6px;
+  border-top-style: solid;
   border-radius: 4.81px;
   -webkit-box-shadow: 0px 1px 3px 0px #00000040;
   -moz-box-shadow: 0px 1px 3px 0px #00000040;
@@ -597,14 +881,13 @@ input[type=password]::placeholder {
 }
 .my-courses__item-header {
   padding: 0.5em;
-  background-color: #5B76E0;
+  border-bottom: 1px solid #D5D6D2;
   border-radius: 4.81px 4.81px 0 0;
-  color: #fff;
 }
 .my-courses__item-header .title {
   margin-bottom: 0.5em;
   font-size: 27px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .my-courses__item-header .subtitle {
   font-size: 14px;
