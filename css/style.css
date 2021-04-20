@@ -583,10 +583,20 @@ input[type=password]::placeholder {
   text-decoration: none;
 }
 .course__inner .sidebar .task:hover .task-title {
+  color: #4662CD;
   text-decoration: underline;
 }
 .course__inner .sidebar .item {
   line-height: 2;
+}
+.course__inner .sidebar .course-link {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
+.course__inner .sidebar .course-link:hover {
+  color: #4662CD;
+  text-decoration: underline;
 }
 .course__inner .main-content {
   padding: 1em 2em;
@@ -595,6 +605,9 @@ input[type=password]::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-align: justify;
+}
+.course__inner .comments {
+  margin-top: 3em;
 }
 .course__inner .comments__item {
   margin-top: 1em;
@@ -673,6 +686,44 @@ input[type=password]::placeholder {
 }
 .course__inner .tasks .task .suptitle {
   font-size: 16px;
+}
+.course__inner .attached-files__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.course__inner .attached-files__item {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid #D5D6D2;
+  border-radius: 10px;
+}
+.course__inner .attached-files__item .attached-file {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.5em;
+}
+.course__inner .attached-files__item .attached-file .icon {
+  grid-row: 1/span 2;
+  align-self: center;
+  width: 2em;
+  height: 2em;
+}
+.course__inner .attached-files__item .attached-file .icon path {
+  fill: #404040;
+}
+.course__inner .attached-files__item .attached-file .value[name=file-name] {
+  font-weight: 500;
+}
+.course__inner .attached-files__item .attached-file .value[name=type] {
+  font-size: 14px;
+  color: #838282;
+}
+.course__inner .attached-files__item .attached-file:hover .value[name=file-name] {
+  color: #4662CD;
 }
 
 /* Unit */

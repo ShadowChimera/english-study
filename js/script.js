@@ -1,12 +1,7 @@
 "use strict"
 
 $(document).ready(function() {
-
-    let $input = $('.auto-input');
-
-    // console.log($input.length, $input[1]);
-
-    $('.auto-input').each(function(index) {
+    $('.auto-input').each(function() {
         let $buffer = $(`div[name=${$(this).attr('name')}]`);
         $buffer.text($(this).val());
         $(this).width($buffer.width());
@@ -18,4 +13,18 @@ $(document).ready(function() {
         });
     });
 
+
+
+    $('.my-courses-link').each(function(){
+        $(this).on('click', function(){
+            document.location.href = `components/my-courses/${$(this).attr('id')}`;
+        });
+    });
+
+
+    $('.lectures__item .btn').each(function(){
+        $(this).on('click', function(){
+            document.location.href = `course-lectures/lecture1.html`;
+        });
+    });
 });

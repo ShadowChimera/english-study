@@ -767,6 +767,7 @@ input[type=password] {
                 &:hover {
                     text-decoration: none;
                     .task-title {
+                        color: $f-color-hovered;
                         text-decoration: underline;
                     }
                 }
@@ -774,6 +775,15 @@ input[type=password] {
 
             .item {
                 line-height: 2;
+            }
+
+            .course-link {
+                @include link-style-reset;
+
+                &:hover {
+                    color: $f-color-hovered;
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -789,6 +799,8 @@ input[type=password] {
         }
 
         .comments {
+            margin-top: 3em;
+
             &__item {
                 margin-top: 1em;
 
@@ -896,6 +908,60 @@ input[type=password] {
 
                 .suptitle {
                     font-size: $f-size-secondary;
+                }
+            }
+        }
+
+        .attached-files {
+            &__inner {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+            }
+
+            &__item {
+                margin-top: 1em;
+
+                padding: 0.5em 1em;
+
+                border: 1px solid $border-color-primary;
+                border-radius: $border-radius-semi-circle;
+
+                .attached-file {
+                    @include link-style-reset;
+
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                    column-gap: 0.5em;
+
+                    .icon {
+                        grid-row: 1 / span 2;
+
+                        align-self: center;
+
+                        width: 2em;
+                        height: 2em;
+
+                        path {
+                            fill: $f-color-primary;
+                        }
+                    }
+
+                    .value[name=file-name] {
+                        font-weight: 500;
+                    }
+
+                    .value[name=type] {
+                        font-size: $f-size-additional;
+                        color: $f-color-subtitle;
+                    }
+
+
+                    &:hover {
+                        .value[name=file-name] {
+                            color: $f-color-hovered;
+                        }
+                    }
                 }
             }
         }
