@@ -13,6 +13,7 @@
 
 body {
     margin: 0;
+    margin-bottom: 1em;
 
     padding: 0;
 
@@ -96,11 +97,6 @@ h2, h3 {
 
 .inactive {
     color: $f-color-secondary-inactive;
-
-    &.i-primary {
-        color: $f-color-primary-inactive;
-    }
-
     @include hidden;
     opacity: 1;
 }
@@ -241,7 +237,6 @@ h2, h3 {
 
     background-color: rgba(0, 0, 0, 0.26);
 
-    display: none;
     @include hidden;
     @include transition(opacity .25s linear);
 
@@ -907,7 +902,7 @@ hr {
 
     cursor: pointer;
     &.expandable {
-        // cursor: default;
+        cursor: default;
     }
 
     &:nth-of-type(n + 2) {
@@ -959,7 +954,6 @@ hr {
     }
     .expandable-part {
         grid-area: expandable;
-        cursor: default;
     }
 
 
@@ -1026,9 +1020,8 @@ hr {
 
 
 
-/* Header & Footer */
-.header,
-.footer {
+/* Header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1039,61 +1032,6 @@ hr {
 
     font-weight: 700;
     color: $f-color-secondary;
-}
-
-
-
-.footer {
-    margin: 0;
-    margin-top: 1em;
-    padding: 2em;
-    // padding-top: 60px;
-    // padding-bottom: 32px;
-
-    h4 {
-        margin: 1em 0;
-
-        font-size: 16px;
-    }
-
-    &__inner {
-        align-items: flex-start;
-    }
-
-    .navbar__inner {
-        font-size: 14px;
-        font-weight: 400;
-
-        li {
-            &:nth-child(n + 2) {
-                margin-top: 0.5em;
-            }
-        }
-    }
-
-    .icon {
-        svg {
-            width: 24px;
-            height: 24px;
-            fill: white;
-
-            @include transition(fill .1s linear);
-        }
-
-        &:hover {
-            svg {
-                fill: $f-color-nav-link-hovered;
-            }
-        }
-    }
-
-    .material-icons {
-        margin-right: 0.5em;
-    }
-
-    hr {
-        opacity: 0.5;
-    }
 }
 
 
@@ -1540,7 +1478,6 @@ hr {
     
                 &:hover {
                     span[name=file-name] {
-                        color: $f-color-hovered;
                         text-decoration: underline;
                     }
                 }
@@ -1560,14 +1497,9 @@ hr {
             display: block;
             position: relative;
             @include link-style-reset;
-            
-            span[name=task-name] {
-                font-weight: 500;
-            }
 
             &:hover {
                 span[name=task-name] {
-                    color: $f-color-hovered;
                     text-decoration: underline;
                 }
             }
@@ -1647,9 +1579,6 @@ hr {
 
 
 #task__inner {
-    // margin: 0;
-    padding: 0;
-
     > :nth-child(n + 2) {
         margin-top: 1em;
     }
@@ -1701,11 +1630,6 @@ hr {
         width: 100%;
         flex: 1 1 0;
     }
-
-    .question-title {
-        margin-left: 1em;
-    }
-
     .answer-options {
         margin-top: 0.25em;
 
@@ -1740,410 +1664,4 @@ hr {
         font-size: $f-size-secondary;
 
     }
-}
-
-
-#lecture {
-    &-main-content {
-        header {
-            margin-bottom: 1em;
-        }
-    
-        .description:not(.short) {
-            line-height: 1.5;
-            margin: 1em 0;
-        }
-    }
-}
-
-#task {
-    .indent {
-        margin-top: 1em;
-    }
-
-    .task__inner {
-        .question {
-            &:nth-child(n + 2) {
-                margin-top: 1em;
-            }
-
-            &-title {
-                margin-bottom: 0.5em;
-
-                font-weight: 500;
-            }
-
-            .answer-options {
-                padding-left: 2.5em;
-                position: relative;
-
-                input {
-                    position: absolute;
-                    left: 0;
-                }
-
-                .answer-option {
-                    margin-top: 0.5em;
-
-                    line-height: 1;
-                }                
-            }
-        }
-
-        input {
-            flex: 1 1 0;
-        }
-    }
-}
-
-
-.info-item {
-    &:nth-child(n + 2) {
-        margin-top: 0.5em;
-    }
-}
-
-
-.main-button {
-    padding: 1em;
-}
-
-#course-comments {
-    .section-title {
-        margin-bottom: 0.5em;
-    }
-}
-
-
-#coming-tasks {
-    .subtitle {
-        // margin-bottom: 0.5em;
-    }
-
-    .task {
-        @include link-style-reset;
-        display: block;
-
-        margin-left: 0.5em;
-
-        padding: 0.5em;
-        border-radius: 0.5em;
-
-        font-family: $ff-secondary;
-
-        .lecture {
-            font-size: 0.8em;
-            color: $f-color-emphasis-lvl-1;
-        }
-
-        @include transition(background-color .1s linear);
-
-
-        &:hover {
-            .task-title {
-                color: $f-color-hovered;
-                text-decoration: underline;
-            }
-        }
-
-        &:active {
-            background-color: $bg-color-primary;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-.header.main {
-    margin-bottom: 0;
-}
-
-.intro {
-    width: 100%;
-    height: 75vh;
-    padding: 10vh 0;
-
-    background-color: $f-color-hovered;
-
-    color: $f-color-secondary;
-    text-align: center;
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        
-        height: 100%;
-    }
-
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        flex: 1 1 0;
-    }
-
-    .title {
-        width: 100%;
-        font-weight: 700;
-        font-size: 50px;
-    }
-    .subtitle {
-        width: 100%;
-        font-size: 32px;
-
-        // flex: 1 1 0;
-    }
-    .description {
-        width: 100%;
-        margin: 0;
-
-        font-family: $ff-title;
-        font-size: 24px;
-        text-align: center;
-
-        &.additional {
-            margin-top: 0;
-            font-size: 20px;
-        }
-    }
-
-    .btn {
-        background-color: transparent;
-        border: 3px solid white;
-        border-radius: 0;
-
-        @include transition('background-color .25s linear, color .25s linear');
-
-        &:hover {
-            background-color: white;
-            color: $f-color-primary;
-        }
-    }
-}
-
-.student-section,
-.teacher-section {
-    display: flex;
-    justify-content: space-evenly;
-
-    // padding: 5vh;
-    padding: 5vh 10vh;
-
-    background-color: white;
-
-    &__description {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        padding: 3em;
-
-        background-color: #E7F9F9;
-    }
-
-    .suptitle {
-        font-size: 16px;
-        font-weight: 500;
-        text-transform: uppercase;
-        line-height: 1.5;
-    }
-    .title {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 1.333;
-    }
-    .description {
-        margin: 1em 0;
-
-        font-family: $ff-secondary;
-        font-size: 20px;
-    }
-    .link {
-        display: block;
-        margin-top: 4em;
-
-        color: $f-color-hovered;
-    }
-
-    .img-container {
-
-        padding: 1em;
-        padding-bottom: 0;
-
-        background-color: $bg-color-primary;
-
-        border: 0.5em solid #E7F9F9;
-        border-bottom-width: 27px;
-
-        img {
-            display: block;
-            // height: 648px;
-        }
-    }
-}
-
-.student-section {
-    flex-direction: row-reverse;
-}
-
-
-.slider {
-    position: relative;
-    bottom: -27px;
-
-    // padding: 1em;
-    // padding-bottom: 0.5em;
-
-    &__item {
-        display: inline-block;
-
-        width: 18px;
-        height: 18px;
-
-        position: relative;
-
-        padding: 1px;
-
-        border: 3px solid $f-color-hovered;
-        border-radius: 2em;
-
-        @include active;
-
-        &:after {
-            content: "";
-
-            width: 10px;
-            height: 10px;
-
-            position: absolute;
-            left: 1px;
-            top: 1px;
-
-            background-color: transparent;
-            
-            border-radius: 2em;
-
-            @include transition(background-color .1s linear);
-        }
-
-        &.active {
-            &:after {
-                background-color: $f-color-hovered;
-            }
-        }
-
-        &:not(.active):hover {
-            &:after {
-                background-color: $bg-color-button-hovered;
-            }
-        }
-    }
-}
-
-.news-section {
-    height: 50vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-    .title {
-        height: 2em;
-
-        margin-bottom: 0.5em;
-    }
-
-    .slider {
-        padding: 1em;
-        padding-bottom: 0;
-
-        bottom: 0;
-
-        &__item {
-            border-color: $f-color-emphasis-lvl-2;
-
-            &.active {
-                &:after {
-                    background-color: $f-color-emphasis-lvl-2;
-                }
-            }
-
-            &:not(.active):hover {
-                &:after {
-                    background-color: $border-color-primary;
-                }
-            }
-        }
-    }
-
-    .slider-container {
-        display: flex;
-        align-items: center;
-        column-gap: 1em;
-
-        &__item {
-            flex: 1 1 0;
-
-            min-height: 250px;
-            
-            padding: 1em;
-            border: 1px solid $border-color-primary;
-            border-radius: 0.5em;
-
-            @include transition(box-shadow .1s linear);
-            @include active;
-
-            &:hover {
-                @include box-shadow($shadow-primary);
-            }
-
-
-            .title {
-                font-family: $ff-title;
-                line-height: 1;
-            }
-
-            .description {
-                text-align: left;
-            }
-
-            &.colored {
-                &-1 {
-                    border-top-width: 6px;
-                    border-top-color: $additional-color-1;
-                }
-                &-2 {
-                    border-top-width: 6px;
-                    border-top-color: $additional-color-2;
-                }
-                &-3 {
-                    border-top-width: 6px;
-                    border-top-color: $additional-color-3;
-                }
-                &-4 {
-                    border-top-width: 6px;
-                    border-top-color: $additional-color-4;
-                }
-            }
-        }
-    }
-}
-
-
-
-
-.form-container {
-    min-height: 75vh;
 }
