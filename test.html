@@ -6,78 +6,1051 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="css/test.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <title>Главная</title>
+    <title>Тесты</title>
 </head>
 
 <body>
-    <p class="size42">Некоторый текст 42px</p>
-    <p class="size36">Некоторый текст 36px</p>
-    <p class="size27">Некоторый текст 27px</p>
-    <p class="size24">Некоторый текст 24px</p>
-    <p class="size18">Некоторый текст 18px</p>
-    <p class="size16">Некоторый текст 16px</p>
-    <p class="size14">Некоторый текст 14px</p>
+    <button class="btn fill rounded-none">
+        Учитель
+    </button><button class="btn stroke rounded-none">
+        Студент
+    </button>
 
-    <p class="size42 color1">Некоторый текст 42px</p>
-    <p class="size36 color1">Некоторый текст 36px</p>
-    <p class="size27 color1">Некоторый текст 27px</p>
-    <p class="size24 color1">Некоторый текст 24px</p>
-    <p class="size18 color1">Некоторый текст 18px</p>
-    <p class="size16 color1">Некоторый текст 16px</p>
-    <p class="size14 color1">Некоторый текст 14px</p>
+    <!-- <div class="layout">
+        <div class="wrapper">
+            <label for="test-input" class="flex-wrapper input-wrapper rounded-full">
+                <input type="text" class="rounded-none auto-input" id="test-input" name="author1" value="Бабенко Алексей">
+                <button class="btn-icon">
+                    <span class="material-icons">clear</span>
+                </button>
+            </label>
+            <pre class="input-buffer" name="for-author1"></pre>
 
-    <p class="size42 color2">Некоторый текст 42px</p>
-    <p class="size36 color2">Некоторый текст 36px</p>
-    <p class="size27 color2">Некоторый текст 27px</p>
-    <p class="size24 color2">Некоторый текст 24px</p>
-    <p class="size18 color2">Некоторый текст 18px</p>
-    <p class="size16 color2">Некоторый текст 16px</p>
-    <p class="size14 color2">Некоторый текст 14px</p>
+            <input type="text" class="rounded-none auto-input" name="author2" value="Бабенко Алексей">
+            <pre class="input-buffer" name="for-author2"></pre>
+            <pre class="input-buffer" name="for-author" style="padding: 7.2px 9px">Бабенко Алексей</pre>
+        </div>
+    </div> -->
 
-    <p class="size42 color3">Некоторый текст 42px</p>
-    <p class="size36 color3">Некоторый текст 36px</p>
-    <p class="size27 color3">Некоторый текст 27px</p>
-    <p class="size24 color3">Некоторый текст 24px</p>
-    <p class="size18 color3">Некоторый текст 18px</p>
-    <p class="size16 color3">Некоторый текст 16px</p>
-    <p class="size14 color3">Некоторый текст 14px</p>
+    <div class="layout">
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
 
-    <p class="size42 color4">Некоторый текст 42px</p>
-    <p class="size36 color4">Некоторый текст 36px</p>
-    <p class="size27 color4">Некоторый текст 27px</p>
-    <p class="size24 color4">Некоторый текст 24px</p>
-    <p class="size18 color4">Некоторый текст 18px</p>
-    <p class="size16 color4">Некоторый текст 16px</p>
-    <p class="size14 color4">Некоторый текст 14px</p>
+                <div class="detailed-link expandable g-template-main bordered color-4">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="title-container">
+                        <span class="title normal">Название курса</span>
+                    </div>
+                    <div class="description-container">
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expand-btn flex-wrapper text-emphasis-like-border">
+                        <hr noshade>
+                        <span class="material-icons">expand_more</span>
+                        <hr noshade>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
 
-    <p class="size42 color5">Некоторый текст 42px</p>
-    <p class="size36 color5">Некоторый текст 36px</p>
-    <p class="size27 color5">Некоторый текст 27px</p>
-    <p class="size24 color5">Некоторый текст 24px</p>
-    <p class="size18 color5">Некоторый текст 18px</p>
-    <p class="size16 color5">Некоторый текст 16px</p>
-    <p class="size14 color5">Некоторый текст 14px</p>
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
 
-    <p class="size42 color6">Некоторый текст 42px</p>
-    <p class="size36 color6">Некоторый текст 36px</p>
-    <p class="size27 color6">Некоторый текст 27px</p>
-    <p class="size24 color6">Некоторый текст 24px</p>
-    <p class="size18 color6">Некоторый текст 18px</p>
-    <p class="size16 color6">Некоторый текст 16px</p>
-    <p class="size14 color6">Некоторый текст 14px</p>
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+
+                <div class="detailed-link expandable g-template-top bordered color-4">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <!-- <div class="detailed-link__body"> -->
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    <!-- </div> -->
+                    <div class="expand-btn flex-wrapper text-emphasis-like-border">
+                        <hr noshade>
+                        <span class="material-icons">expand_more</span>
+                        <hr noshade>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+
+                <div class="detailed-link expandable g-template-bottom bordered color-4">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+
+                    <span class="title">Заголовок</span>
+            
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="wrapper">
+            <button class="btn rounded-none">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn rounded-quarter">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn rounded-half">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn rounded-full">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+        </div>
+        <div class="wrapper">
+            <button class="btn equal">
+                <span class="material-icons">add</span>
+            </button>
+            <button class="btn rounded-quarter equal">
+                <span class="material-icons">add</span>
+            </button>
+            <button class="btn rounded-half equal">
+                <span class="material-icons">add</span>
+            </button>
+            <button class="btn rounded-full equal">
+                <span class="material-icons">add</span>
+            </button>
+            <button class="btn rounded-full equal deployable">
+                <span class="material-icons">add</span>
+            </button>
+            <button class="btn-icon">
+                <span class="material-icons">add</span>
+            </button>
+        </div>
+        <div class="wrapper">
+            <button class="btn fill rounded-none">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn stroke rounded-none">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn stroke">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn rounded-quarter stroke">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn rounded-half stroke">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+            <button class="btn rounded-full stroke">
+                <span class="material-icons">add</span>
+                Добавить
+            </button>
+        </div>
+
+        <div class="wrapper">
+            <input type="text" placeholder="text">
+            <input type="password" placeholder="password">
+        </div>
+        <div class="wrapper">
+            <input type="text" class="fill" placeholder="text">
+            <input type="password" class="fill" placeholder="password">
+        </div>
+        <div class="wrapper">
+            <input type="text" class="rounded-none">
+            <input type="text">
+            <input type="text" class="rounded-quarter">
+            <input type="text" class="rounded-half">
+            <input type="text" class="rounded-full">
+        </div>
+        <div class="wrapper">
+            <input type="text" class="rounded-none stroke-bottom" placeholder="text">
+            <input type="text" class="stroke-bottom" placeholder="text">
+            <input type="text" class="rounded-quarter stroke-bottom" placeholder="text">
+            <input type="text" class="rounded-half stroke-bottom" placeholder="text">
+            <input type="text" class="rounded-full stroke-bottom" placeholder="text">
+        </div>
+        <div class="wrapper">
+            <input type="text" class="rounded-none fill">
+            <input type="text" class="fill">
+            <input type="text" class="rounded-quarter fill">
+            <input type="text" class="rounded-half fill">
+            <input type="text" class="rounded-full fill">
+        </div>
+        <div class="wrapper">
+            <input type="text" class="rounded-none fill stroke-bottom">
+            <input type="text" class="fill stroke-bottom">
+            <input type="text" class="rounded-quarter fill stroke-bottom">
+            <input type="text" class="rounded-half fill stroke-bottom">
+            <input type="text" class="rounded-full fill stroke-bottom">
+        </div>
+        <div class="wrapper">
+            <input type="text" class="rounded-none fill stroke-none">
+            <input type="text" class="fill stroke-none">
+            <input type="text" class="rounded-quarter fill stroke-none">
+            <input type="text" class="rounded-half fill stroke-none">
+            <input type="text" class="rounded-full fill stroke-none">
+        </div>
 
 
-    <p class="suptitle">Надзаголовок</p>
-    <p class="title">Заголовок</p>
-    <p class="subtitle">Подзаголовок</p>
-    <!-- <p class="emphasis">Особый акцент</p> -->
-    <p class="main-text">Основной текст</p>
-    <p class="placeholder">Плейсхолдер</p>
+        <div class="wrapper">
+            <textarea class="rounded-none"></textarea>
+            <textarea></textarea>
+            <textarea class="rounded-quarter"></textarea>
+            <textarea class="rounded-half"></textarea>
+            <textarea class="rounded-full"></textarea>
+        </div>
+        <div class="wrapper">
+            <textarea class="rounded-none stroke-bottom" placeholder="text"></textarea>
+            <textarea class="stroke-bottom" placeholder="text"></textarea>
+            <textarea class="rounded-quarter stroke-bottom" placeholder="text"></textarea>
+            <textarea class="rounded-half stroke-bottom" placeholder="text"></textarea>
+            <textarea class="rounded-full stroke-bottom" placeholder="text"></textarea>
+        </div>
+        <div class="wrapper">
+            <textarea class="rounded-none fill"></textarea>
+            <textarea class="fill"></textarea>
+            <textarea class="rounded-quarter fill"></textarea>
+            <textarea class="rounded-half fill"></textarea>
+            <textarea class="rounded-full fill"></textarea>
+        </div>
+        <div class="wrapper">
+            <textarea class="rounded-none fill stroke-bottom"></textarea>
+            <textarea class="fill stroke-bottom"></textarea>
+            <textarea class="rounded-quarter fill stroke-bottom"></textarea>
+            <textarea class="rounded-half fill stroke-bottom"></textarea>
+            <textarea class="rounded-full fill stroke-bottom"></textarea>
+        </div>
+        <div class="wrapper">
+            <textarea class="rounded-none fill stroke-none"></textarea>
+            <textarea class="fill stroke-none"></textarea>
+            <textarea class="rounded-quarter fill stroke-none"></textarea>
+            <textarea class="rounded-half fill stroke-none"></textarea>
+            <textarea class="rounded-full fill stroke-none"></textarea>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="input-wrapper rounded-none">
+                <input type="text" class="rounded-none stroke-none">
+                <button class="btn-icon">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" class="rounded-none stroke-none">
+                <button class="btn-icon">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+            <div class="input-wrapper rounded-quarter">
+                <input type="text" class="rounded-none stroke-none">
+                <button class="btn-icon">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+            <div class="input-wrapper rounded-half">
+                <input type="text" class="rounded-none stroke-none">
+                <button class="btn-icon">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+            <div class="input-wrapper rounded-full">
+                <input type="text" class="rounded-none stroke-none">
+                <button class="btn-icon">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="input-wrapper rounded-full deployable">
+                <input type="text" class=" rounded-full stroke-none" placeholder="Поиск">
+                <button class="btn-icon">
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="wrapper">
+            <div class="detailed-link">
+                <header class="detailed-link__header">
+                    <span class="header-item standart-emphasis">Некоторая информация</span>
+                    <span class="header-item">Некоторая информация</span>
+                    <span class="header-item">Некоторая информация</span>
+                </header>
+                <div class="detailed-link__body">
+                    <span class="title">Заголовок</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed dapibus eros. Cras laoreet lorem nec ante mattis tincidunt. Ut ac fringilla erat, eget laoreet augue. Maecenas ut lectus porttitor, vehicula sapien nec, aliquam erat. Maecenas ornare arcu efficitur porta efficitur.
+                    </p>
+                </div>
+                <footer class="detailed-link__footer">
+                    <span class="header-item">Некоторая информация</span>
+                    <span class="header-item">Некоторая информация</span>
+                    <span class="header-item">Некоторая информация</span>
+                </footer>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="content-panel">
+                <div class="detailed-link">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed dapibus eros. Cras laoreet lorem nec ante mattis tincidunt. Ut ac fringilla erat, eget laoreet augue. Maecenas ut lectus porttitor, vehicula sapien nec, aliquam erat. Maecenas ornare arcu efficitur porta efficitur.
+                        </p>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel">
+                <div class="detailed-link">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed dapibus eros. Cras laoreet lorem nec ante mattis tincidunt. Ut ac fringilla erat, eget laoreet augue. Maecenas ut lectus porttitor, vehicula sapien nec, aliquam erat. Maecenas ornare arcu efficitur porta efficitur.
+                        </p>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel">
+                <div class="detailed-link">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed dapibus eros. Cras laoreet lorem nec ante mattis tincidunt. Ut ac fringilla erat, eget laoreet augue. Maecenas ut lectus porttitor, vehicula sapien nec, aliquam erat. Maecenas ornare arcu efficitur porta efficitur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="wrapper container c-8">
+            <div class="content-panel">
+                <div class="detailed-link">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <span class="title">Заголовок</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel">
+                <div class="detailed-link">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper container c-8">
+            <div class="content-panel">
+                <div class="detailed-link">
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link expandable">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expand-btn flex-wrapper text-emphasis-like-border">
+                        <hr noshade>
+                        <span class="material-icons">expand_more</span>
+                        <hr noshade>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link expandable">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expand-btn flex-wrapper text-emphasis-like-border">
+                        <hr noshade>
+                        <span class="material-icons">expand_more</span>
+                        <hr noshade>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link expandable bordered color-1">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expand-btn flex-wrapper text-emphasis-like-border">
+                        <hr noshade>
+                        <span class="material-icons">expand_more</span>
+                        <hr noshade>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link bordered color-1">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link bordered color-2">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link bordered color-3">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link bordered color-4">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper container c-8">
+            <div class="content-panel wrapper">
+                <div class="detailed-link bordered color-5">
+                    <header class="detailed-link__header">
+                        <span class="header-item standart-emphasis">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </header>
+                    <div class="detailed-link__body">
+                        <!-- <span class="title">Заголовок</span> -->
+                        <span class="title">Заголовок</span>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. С другой стороны рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития.
+                        </p>
+                    </div>
+                    <div class="expandable-part">
+                        <div class="flex-wrapper">
+                            <div class="subtitle text-emphasis-1">Задания</div>
+                            <div class="text-emphasis-2">Срок сдачи</div>
+                        </div>
+                        <ul class="expandable-part__inner">
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Завтра</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">Четверг</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-wrapper link">
+                                    <span class="secondary-text">Задание 1</span>
+
+                                    <span class="text-emphasis-2">28.04.2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="detailed-link__footer">
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                        <span class="header-item">Некоторая информация</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper container c-8">
+            <div class="content-panel">
+                <div class="expandable">
+                    <div class="expand-btn secondary-color flex-wrapper text-emphasis-2">
+                        <span class="title">Цена</span>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+
+                    <div class="expandable-part">
+                        <div>Некоторые элементы</div>
+                        <div>Некоторые элементы</div>
+                        <div>Некоторые элементы</div>
+                        <div>Некоторые элементы</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
